@@ -15,7 +15,11 @@
         box-sizing: border-box;
         box-shadow: 1px 2px 30px rgba(0,0,0,0.2);
         position: relative;
-        background-color: ;
+        background-color: dimgrey;
+    }
+    .content{
+    	margin: 0 auto;
+    	text-align: center;
     }
     .header-container{
         width: 100%;
@@ -25,33 +29,44 @@
         box-sizing: border-box;
         position: relative;
         box-shadow: 1px 2px 30px rgba(0,0,0,0.2);
+        background-color: #ffae2b;
+    }
+
+    
+    
+    header{
+    	background-color: #de2e1d;
 
     }
-    .logo{
-    	float: left;
+    header img{
+    	width: 5%;
+    }
+    ul{
+    	list-style-type: none;
 
     }
-    .navigation{
-    	float: right;
-    }
-    header div img{
-    	width: 25%;
+    li{
+    	display: inline-block;
+    	padding-right: 5px;
     }
 
 
 </style>
 <body>
 	<header class="header-container">
-		<div class="logo">
-			<img src="rovinlogo.jpg">
-		</div>
-		<nav class="navigation">
+		<div class="content">
+			
+			<nav class="navigation">
 			<ul>
 				<li><a href="">Home</a></li>
 				<li><a href="">About</a></li>
+				<img src="rovinlogo.jpg">
+				<li><a href="">Our Services</a></li>
 				<li><a href="">Contact Us</a></li>
 			</ul>
 		</nav>
+		</div>
+		
 		
 	</header>
 	
