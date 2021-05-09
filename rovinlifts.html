@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <script src="https://kit.fontawesome.com/fd14e678e6.js" crossorigin="anonymous"></script>
 <style>
 	.container{
@@ -59,47 +61,147 @@
     		display: none;
     	}
     }
-    video{
-    	width: 100%;
+    
+    .section1{
+    	height: 100vh;
+    	overflow: hidden;
+    	position: relative;
+    	display: flex;
+    	align-items: center;
+    	justify-content: center;
+    	flex-direction: column;
+    	color: black;
+
     }
+
+    video{
+    	position: absolute;
+    	min-height: 100vh;
+    	min-width: 100%
+    	z-index:-100;
+    }
+    h1{
+    	color: #de2e1d;
+    	font-family: New Tegomin, serif, sans-serif;
+    	font-size: 40px;
+    	font-weight: 700;
+    	position: relative;
+    	display: block;
+    }
+    	
+
 
     .button.to-top{
             color: white;
-            background-color: #de2e1d;
+            background-color: ;
             padding: 5px 12px 5px 2px;
             border-radius: 3px;
-            background-color: black;
-            border: 1px solid #ffae2b;}
+            background-color: ;
+            border: ;}
 
     .button .arrows:before{
             content:"\00BB";}
 
     .button .arrows{
-            font-size: 20px;
+            font-size: 60px;
             display: inline-block;
             transform: rotate(450deg);
             line-height: 20px;
             justify-content: center;
             vertical-align: middle;
             margin-left: 15px;}
+
+    .button1{
+    	width: 100%;
+        max-width: 1145px;
+        margin: 0 auto;
+        padding: 50px 20px;
+        box-sizing: border-box;
+        box-shadow: 1px 2px 30px rgba(0,0,0,0.2);
+        border: 1px solid #ffae2b;
+        position: relative;
+        background-color: transparent;
+    }
+
+    .button1 h1{
+    	animation-name: flash;
+        animation-duration: 8s;
+        animation-timing-function:ease-in-out;
+        animation-iteration-count:infinite;
+    }
+
     .button1 a span{
             animation-name: flash;
-            animation-duration: 2s;
+            animation-duration: 8s;
             animation-timing-function:ease-in-out;
             animation-iteration-count:infinite;}
 
     @keyframes flash{
         0%{
-            color: aliceblue;}
+            color: green;}
         25%{
-            color: darkgray;}
+            color: black;}
         50%{
-            color:burlywood;}
+            color: silver;}
         75%{
-            color: darkgoldenrod;}
+            color: orange;}
         100%{
-            color: dimgrey;}
+            color: darkgoldenrod;}
         }
+
+    .section2{
+    	width: 100%;
+        max-width: 1145px;
+        height: 100vh;
+        margin: 0 auto;
+        padding: 50px 20px;
+        box-sizing: border-box;
+        box-shadow: 1px 2px 30px rgba(0,0,0,0.2);
+        position: relative;
+        background-color: ;
+    }
+    h2{
+    	text-align: center;
+    	color: ;
+    	font-family: New Tegomin, serif, sans-serif;
+    	font-size: 30px;
+    	font-weight: 400;
+    	position: relative;
+    	display: block;
+
+    }
+    .section2{
+    	background-image: url(team.jpg);
+    	background-position: fixed;
+    	background-repeat: no-repeat;
+    	background-size: cover;
+
+    }
+
+
+    .section3{
+    	width: 100%;
+        max-width: 1145px;
+        height: 100vh;
+        margin: 0 auto;
+        padding: 50px 20px;
+        box-sizing: border-box;
+        box-shadow: 1px 2px 30px rgba(0,0,0,0.2);
+        position: relative;
+        background-color: ;
+    }
+
+    .section4{
+    	width: 100%;
+        max-width: 1145px;
+        height: 100vh;
+        margin: 0 auto;
+        padding: 50px 20px;
+        box-sizing: border-box;
+        box-shadow: 1px 2px 30px rgba(0,0,0,0.2);
+        position: relative;
+        background-color: ;
+    }
 
 
 </style>
@@ -110,8 +212,8 @@
 			<nav class="navigation">
 			<ul>
 				<li><a href="">Home</a></li>
-				<li><a href="">About</a></li>
-				<li><a href="">Our Services</a></li>
+				<li><a href="#about-us">About</a></li>
+				<li><a href="#our-services">Our Services</a></li>
 				<li><a href="">Contact Us</a></li>
 			</ul>
 		</nav>
@@ -119,19 +221,57 @@
 	</header>
 
 	<section class="container">
-		<div class="content">
-			<video autoplay loop muted>
+		<div class="section1">
+			<video poster="worker.jpg" autoplay loop muted>
 				<source src="construction.mp4" type="video/mp4">
 			</video>
-			<h1 style="display: block;">Passion, Dedication, Innovation...</h1>
+			
 			<div class="button1" style="text-align: center;">
-                        <a href="" class="button to-top" title="Back to top of page">
-                        <span class="arrows up"></span> <!--The Span is empty - it's because the content (which is the entity of ARROW BUTTON) is a CSS attribute. So where the span class .button .arrows is targeted, inside it, the content (arrow button code \00BB) is where it is added.--></a>
+				<h1>Passion, Dedication, Innovation...</h1>
+                        <a href="#about-us" class="button to-top" title="About Us">
+                        <span class="arrows up"></span></a> <!--The Span is empty - it's because the content (which is the entity of ARROW BUTTON) is a CSS attribute. So where the span class .button .arrows is targeted, inside it, the content (arrow button code \00BB) is where it is added.-->
         	</div>
 		</div>
-		
+	</section>
+
+	<section id="about-us" id="#about-us" class="section2">
+		<div>
+			<h2>Meet the Team</h2>
+			
+		</div>
+			
+				
 		
 	</section>
+
+	<section id="our-services" id="#our-services" class="section3">
+		<div>
+			<h2>Our Services</h2>
+		</div>
+		
+	</section>
+
+	<section id="contact-us" id="#contact-us" class="section4">
+		<div>
+			<h2>Contact Us</h2>
+		</div>
+		
+	</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	
 </body>
 </html>
